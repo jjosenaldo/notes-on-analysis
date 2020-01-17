@@ -1,4 +1,96 @@
 \setcounter{chapter}{5}
 \chapter{Some Topological Notions}
 
-$$1+1=2$$
+\begin{definition}[Interior Point]
+	The point $a$ is \emph{interior} to the set $X \subseteq \reals$ when there is some $\eps > 0$ st $\oo{a - \eps}{a + \eps}\subseteq \reals$. The set of interior points of $X$, called the \emph{interior} of $X$, is represented as $\interior X$.
+\end{definition}
+
+\begin{definition}[Neighborhood]
+	If $a \in \interior X$, then $X$ is a \emph{neighborhood} of $a$.
+\end{definition}
+
+\begin{definition}[Open Set]
+	$X\subseteq \reals$ is open iff $\interior X = X$.
+\end{definition}
+
+%TODO: define 'eventually contained'
+
+\begin{fact}[Limit of a Sequence in Terms of Open Sets]
+	$a = \lim x_n$ iff for every open set $A$, $x_n$ is eventually contained in $A$. 
+\end{fact}
+
+\begin{theorem}
+	Arbitrary unions of opens are open; finite intersections of opens are open.
+\end{theorem}
+
+\begin{definition}[Adherent Point]
+	$a$ is \emph{adherent} to the set $X \subseteq \reals$ when $a$ is the limit of a sequence of points of $X$.
+\end{definition}
+
+\begin{definition}[Closure]
+	The \emph{closure} of $X \subseteq R$ is the set of points that adhere to $X$. It is denoted by $\closure X$.
+\end{definition}
+
+\begin{definition}[Closed Set]
+	A set $X$ is \emph{closed} when $\closure X= X$.
+\end{definition}
+
+\begin{definition}[Dense Set]
+	Let $X \subseteq Y$. $X$ is \emph{dense} on $Y$ if $Y \subseteq \closure X$.
+\end{definition}
+
+\begin{theorem}
+	$a$ adheres to $X$ iff every neighborhood of $a$ intersects $X$.
+\end{theorem}
+
+\begin{corollary}
+	Closures are closed.
+\end{corollary}
+
+\begin{theorem}
+	A set is closed iff its complement in $\reals$ is open.
+\end{theorem}
+
+\begin{theorem}
+	Arbitrary intersections of closeds are closed; finite unions of closeds are closed. 
+\end{theorem}
+
+%TODO: review this name
+\begin{definition}[Cision]
+	The sets $A$ and $B$ are a \emph{cision} of $X = A \cup B$ if
+	$A \cap \closure B = \closure A \cap B = \emptyset$.
+\end{definition}
+
+%TODO: understand the demonstration of this fact
+\begin{theorem}
+	Intervals of the rect only admit the trivial cision.
+\end{theorem}
+
+\begin{corollary}
+	The only clopen subsets of $\reals$ are $\emptyset$ and $\reals$.
+\end{corollary}
+
+\begin{definition}[Accumulation Point]
+	$a$ is an \emph{accumulation point} of $X$ if every neighborhood of $a$ intersects $X \setminus \set a$. The set of accumulation points of $X$ is denoted as $\accpoints X$.
+\end{definition}
+
+\begin{definition}[Isolated Point]
+	$a \in X$ is a point \emph{isolated} from $X$ if $a$ is not an accumulation point of $X$.
+\end{definition}
+
+\begin{definition}[Discrete Set]
+	A set is \emph{discrete} if all of its elements are isolated points.
+\end{definition}
+
+\begin{theorem}
+	Given $X \subseteq \reals$ and $a \in \reals$, the following are equivalent:
+	\begin{enumerate}
+		\item $a \in \accpoints X$
+		\item $a \in \closure{X \setminus \set a}$
+		\item Every interval centered in $a$ has infinite elements of $X$.
+	\end{enumerate}
+\end{theorem}
+
+\begin{theorem}
+	Every bounded infinite set has an accumulation point.
+\end{theorem}

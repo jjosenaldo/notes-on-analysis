@@ -1,0 +1,28 @@
+# File extensions
+*.acr
+*.alg
+*.aux
+*.acn
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+
+# build/ folder
+build/
