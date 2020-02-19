@@ -87,3 +87,26 @@
 \begin{fact}
 	$\lim\frac{x_n+a/x_n}2=\sqrt a, a>0$
 \end{fact}
+
+\begin{definition}[Infinite Limits]
+	We say that $\lim x_n = \infty$ when for each $M>0$ eventually $\seqn x > M$. 
+	Analogously, $\lim x_n = -\infty$ when for each $N<0$ eventually $\seqn x < N$.
+\end{definition}
+
+\begin{fact}
+	$\lim x_n = -\infty \iff \lim -x_n = \infty$
+\end{fact}
+
+\begin{theorem}
+	\begin{enumerate}
+		\item[]
+		\item If $\lim x_n = \infty$ and $\seqn y$ has a lower bound then $\lim (x_n+y_n) = \infty$.
+		\item If $\lim x_n = \infty$ and $\seqn y > c$ for some $c>0$ then $\lim x_n y_n = \infty$.
+		\item If $\seqn x > c$ for some $c > 0$ and $\seqn y > 0$ then $\lim \frac{x_n}{y_n} = \infty$.
+		\item If $\seqn x$ é limitada e $\lim y_n = \infty$ then $\lim \frac{x_n}{y_n}=0$.
+	\end{enumerate}
+\end{theorem}
+
+\begin{fact}
+	$\lim \frac{\log n }{n} = 0$
+\end{fact}
