@@ -1,0 +1,89 @@
+\setcounter{chapter}{2}
+\chapter{Sequences of Real Numbers}
+
+\begin{definition}[Limit of a Sequence; Convergence]
+	$a$ is a \emph{limit} of the sequence $\seq {x_n}$ if for every $\eps > 0$ the sequence is eventually $\eps$-closed to $a$.
+	We say that $\seq{x_n}$ \emph{converges} to $a$, and that $\seq{x_n}$ is \emph{convergent}.
+\end{definition}
+
+\begin{theorem}
+	Limits of sequences are unique.
+\end{theorem}
+
+\begin{theorem}
+	If $\lim x_n = a$ then every subsequence of $\seq{x_n}$ converges to $a$.
+\end{theorem}
+
+\begin{theorem}
+	Every congervent sequence is limited.
+\end{theorem}
+
+\begin{fact}
+	If a monotone sequence $\seq{x_n}$ has a limited subsequence, then $\seq{x_n}$ itself is limited.
+\end{fact}
+
+\begin{theorem}
+	Every limited monotone sequence is convergent.
+\end{theorem}
+
+\begin{corollary}[Bolzano--Weierstrass Theorem]
+	Every limited sequence has a convergent subsequence.
+\end{corollary}
+
+\begin{theorem}
+	If $b < \lim x_n$, then eventually $b < \seq{x_n}$. Analogously,
+	$b > \lim x_n$ implies that $b > \seq{x_n}$ eventually.
+\end{theorem}
+
+\begin{corollary}
+	If eventually $\seq{x_n} \le \seq{y_n}$, then $\lim x_n \le \lim y_n$. 
+	In particular, if eventually $\seq{x_n} \le c$, then $\lim x_n \le c$.
+\end{corollary}
+
+\begin{theorem}[Sandwich's Theorem]
+		If $\lim x_n = \lim z_n = l$ and eventually $\seqn x \le \seqn y \le \seqn z$, then $\lim y_n = l$.
+\end{theorem}
+
+\begin{theorem}
+	If $\lim x_n = 0$ and $\seqn y$ is a limited sequence, then $\lim x_ny_n=0$.
+\end{theorem}
+
+\begin{fact}
+	$\lim x_n = a \iff \lim (x_n - a) = 0 \iff \lim \modu{x_n - a} = 0$.
+\end{fact}
+
+\begin{theorem}
+	If $\lim x_n = a$ and $\lim y_n = b$, then
+	%
+	\begin{enumerate}
+		\item $\lim (x_n \pm y_n) = a \pm b$.
+		\item $\lim x_n y_n = ab$.
+		\item $\lim \frac{x_n}{y_n} = a/b$ given that $b \ne 0$.
+	\end{enumerate}
+\end{theorem}
+
+\begin{fact}
+	If $\seqn x > 0$ and $\lim \frac{x_{n+1}}{x_n}<1$ then $\lim x_n=0$.
+\end{fact}
+
+\begin{fact}
+	If $a > 1$ and $k \in \nats$ then $$\lim\limits_{n\to\infty} \frac{n^k}{a^n} = 
+	\lim\limits_{n\to\infty} \frac{a^n}{n!} = \lim\limits_{n\to\infty} \frac{n!}{n^n}
+	=0$$
+\end{fact}
+
+\begin{fact}
+	If $a>0$ then $\lim a^{1/n}=1$.
+\end{fact}
+
+\begin{fact}
+	$\lim \paren{\frac{n+1}{n}}^n = \sum_{n=0}^{\infty}\frac1n = e$
+\end{fact}
+
+\begin{fact}
+	$\lim n^{1/n}=1$
+\end{fact}
+
+\begin{fact}
+	$\lim\frac{x_n+a/x_n}2=\sqrt a, a>0$
+\end{fact}

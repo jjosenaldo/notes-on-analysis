@@ -1,9 +1,16 @@
+%	Utility
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\pipe}[1]{\left|#1\right|}
+
 %	Topology
 \newcommand{\closure}{\overline}
 \newcommand{\accpoints}[1]{#1^\prime}
 
 %	Real numbers
-\newcommand{\oo}[2]{\left(#1,#2\right)}
+\newcommand{\oo}[2]{\left(#1,#2\right)} % Open-open
+\newcommand{\seq}{\paren}
+\newcommand{\seqn}[1]{\seq{#1_n}}
+\newcommand{\modu}{\pipe}
 
 %	Numerical sets
 \newcommand{\reals}{\mathbb R}
