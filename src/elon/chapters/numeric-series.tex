@@ -1,0 +1,32 @@
+\setcounter{chapter}{3}
+\chapter{Numeric Series}
+
+\begin{definition}[Series, Partial Sums]
+	A \emph{series} is a limit of the form $\lim (a_1 + \dots + a_n)$.
+	The numbers $s_n = a_1 + \dots + a_n$ are the \emph{partial sums} of the series, 
+	and the term $a_n$ is its \emph{general term}.
+\end{definition}
+
+\begin{definition}[Congervence]
+	When the limit corresponding to a series exists, the series is \emph{convergent}.
+	Otherwise, it is \emph{divergent}.
+\end{definition}
+
+\begin{fact}
+	The series $1 + a + a^2 + \dots$ is the \emph{geometric series}. It converges to $1/1-a$.
+\end{fact}
+
+\begin{fact}
+	A series of nonnegative terms converges iff there's a constant that limits
+	each of its partial sums.  
+\end{fact}
+
+\begin{fact}
+	The series $\sum 1/n$ is the \emph{harmonic series}. It diverges.
+\end{fact}
+
+\begin{theorem}[Comparison Criteria]
+	Let $\sum a_n$ and $\sum b_n$ be series with nonnegative terms. If there's some $c>0$
+	such that eventually $\seqn a \le c\seqn b$, then the convergence of $\sum b_n$
+	implies that $\sum a_n$ converges; and if $\sum a_n$ diverges then so does $\sum b_n$.
+\end{theorem}

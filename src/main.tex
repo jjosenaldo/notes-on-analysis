@@ -1,18 +1,19 @@
 \documentclass[openany, oneside]{book}
-\usepackage{sty/imports}
-\usepackage{sty/title}
-\usepackage{sty/macros}
-\usepackage{sty/config}
 
-\titleufrncourse{-}{REAL ANALYSIS}{Josenaldo Júnior}
+%TODO: change this ugly attempt of a solution
+\makeatletter
+\def\input@path{{notes-preamble/}}
+\makeatother
+
+\usepackage{notes-preamble/allpacks}
 
 \begin{document}
 
 \hypersetup{pageanchor=false}
-\maketitle
+% \maketitle
 \hypersetup{pageanchor=true}
 
-\tableofcontents
+% \tableofcontents
 
 \importbooknotes{elon}
 
